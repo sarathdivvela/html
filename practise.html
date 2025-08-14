@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toggle Menu Only</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  nav {
+    background-color: #333;
+    padding: 10px;
+    position: relative;
+  }
+
+  /* Menu items (hidden by default) */
+  .menu {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+  }
+
+  .menu li {
+    border-top: 1px solid #ff0d0d;
+
+  }
+
+  .menu li a {
+    color: white;
+    text-decoration: line-through;
+    background-color: #ff0d0d;
+    
+    display: block;
+    padding: 12px;
+  }
+
+  .menu li a:hover {
+    background-color: #575757;
+    margin: 10px;
+  }
+
+  /* Toggle button */
+  .toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  /* Desktop view */
+  @media (min-width: 600px) {
+    .menu {
+      flex-direction: row;
+    }
+    .menu li {
+      border: none;
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <button class="toggle-btn" onclick="toggleMenu()">☰ Menu</button>
+  <ul class="menu" id="menuList">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<script>
+  
+function toggleMenu() {
+  const menu = document.getElementById("menuList");
+  menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+}
+</script>
+
+</body>
+</html>
