@@ -10,21 +10,39 @@
 </head>
 
 <body>
-    <script src="/assets/bootstrap-5.3.7-dist/js/"></script>
-    <section class=" dropdown-item nav-bar mb-3 d-flex flex-row bg-success align-items-end justify-content-between ">
-        <img src="./aththesic.jpg" width="10%" class="ms-xl-4 ms-sm-0" alt="">
-        <ol class="list-unstyled d-flex flex-row ">
-            <li class="ms-sm-2 ms-xl-4"><a href="./js.html" class="text-white text-decoration-none hover-shadow">JS</a>
-            </li>
-            <li class="ms-sm-2 ms-xl-4"><a href="./task.html" class="text-white text-decoration-none">TASK</a></li>
-            <li class="ms-sm-2 ms-xl-4"><a href="./view.html" class="text-white text-decoration-none">VIEW</a></li>
-            <li class="ms-sm-2 ms-xl-4"><a href="./practise.html" class="text-white text-decoration-none">PRACTISE</a>
-            </li>
-            <li class="ms-sm-2 ms-xl-4"><button class="btn btn-dark border rounded-pill btn-outline-warning "
-                    onclick="menufunc()">menu</button></li>
-        </ol>
-    </section>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container">
+            <a class="navbar-brand bg-light" href="./new.html"><img src="./assets/images/back part.png" alt="" width="100px"></a>
 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-light">☰</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+                    <li class="">
+                        <a class="nav-link active text-light" aria-current="page"
+                            href="./New folder/index.html">index</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./New folder/contact.html">contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./New folder/task.html">gallary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./New folder/index.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./New folder/js.html" class="nav-link disabled text-light">services</a>
+                    </li>
+                    <li class="ms-sm-2 ms-xl-4"><button class="btn btn-dark border rounded-pill btn-outline-warning "
+                    onclick="menufunc()">menu</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <section class="menuClass">
         <section id="menuId" class="mb-3 d-none flex-row bg-success align-items-end justify-content-between ">
