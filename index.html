@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 100px;
+            /* adjust if navbar is taller */
+        }
+
+        .responsive-img {
+            width: 25%;
+        }
+
+        @media screen and (min-width:400px) {
+            .responsive-img {
+                width: 10%;
+            }
+        }
+
+        .carousel-inner img {
+            height: 500px;
+            object-fit: contain;
+            background-color: brown;
+
+            /* keeps image aspect ratio */
+        }
+
+        /* Medium screens */
+        @media (max-width: 992px) {
+            .carousel-inner img {
+                height: 400px;
+            }
+        }
+
+        /* Small screens */
+        @media (max-width: 768px) {
+            .carousel-inner img {
+                height: 300px;
+            }
+        }
+
+        /* Extra small screens / mobile */
+        @media (max-width: 576px) {
+            .carousel-inner img {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class=" navbar navbar-expand-lg bg-success position-fixed top-0 w-100 ">
+        <div class="container">
+            <img src="./aththesic.jpg" class="responsive-img w-sm-10 ms-xl-4 ms-sm-0" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-light"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ol class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+                    <li class="ms-sm-2 ms-xl-4"><a href="./js.html"
+                            class="text-white text-decoration-none hover-shadow">JS</a>
+                    </li>
+                    <li class="ms-sm-2 ms-xl-4"><a href="./task.html" class="text-white text-decoration-none">TASK</a>
+                    </li>
+                    <li class="ms-sm-2 ms-xl-4"><a href="./view.html" class="text-white text-decoration-none">VIEW</a>
+                    </li>
+                    <li class="ms-sm-2 ms-xl-4"><a href="./practise.html"
+                            class="text-white text-decoration-none">PRACTISE</a>
+                    </li>
+                    <li class="ms-sm-2 ms-xl-4"><button class="btn btn-dark border rounded-pill btn-outline-warning "
+                            onclick="menufunc()">menu</button></li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <div id="carouselExampleIndicators" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./aththesic.jpg" class="responsive-carousal d-block w-100 " alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img src="./back_part.png" class="responsive-carousal d-block w-100 " alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img src="./programmer.jpg" class="responsive-carousals d-block w-100" alt="Third slide">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+    <!-- <p style="margin:20px; text-align:justify">Lorem ipsum d natus dicta dolore quaerat ullam saepe consequuntur minus
+        voluptatem totam exercitationem alias libero enim, consequatur magnam similique repudiandae nam quod, placeat
+        maxime repellendus corporis et incidunt itaque possimus! Odit error facere maiores reiciendis illo quasi eius
+        tempore qui ab, aliquam possimus modi corrupti earum quo. Adipisci optio numquam sed vitae accusantium
+        dignissimos enim earum libero maiores. Eius a sint, fugiat quam unde repellat dolorum praesentium? Commodi quasi
+        aperiam veritatis facilis est nulla saepe minima, dolor quidem nesciunt non nisi perferendis similique ratione
+        sit culpa hic aliquam impedit! Nihil itaque tenetur hic ad neque! Enim ipsa, dolores sit sint, veritatis iusto
+        consequatur atque iure incidunt impedit, doloribus dicta? Laboriosam ex facilis quae maxime rem ut aspernatur
+        reprehenderit voluptatum cumque repudiandae pariatur aut animi aliquid quia possimus, atque repellendus sunt
+        nihil nulla, veniam corporis eum adipisci. Soluta commodi labore magni cupiditate obcaecati, perspiciatis hic
+        minus aut esse fugiat repellat suscipit, incidunt quos nostrum sequi et doloribus enim quo quidem
+        exercitationem? Quisquam distinctio quaerat et deserunt. Facere ipsa delectus repellat excepturi nesciunt saepe
+        consequuntur minima tenetur vel velit, doloribus unde, odit necessitatibus quaerat voluptatibus cum provident
+        magni ab nemo architecto. Libero eligendi eaque numquam maiores quas repellendus! Aliquid reiciendis dolores
+        iure omnis perferendis facilis unde aperiam placeat ipsam ipsa tempore quia, enim vel deleniti ut, tenetur quas
+        debitis provident rem modi eos ad officiis veniam id. Laboriosam, quasi fugit, autem obcaecati repellat ullam
+        assumenda eligendi aperiam fugiat iste sint recusandae voluptates, id est commodi consequuntur deleniti aliquid
+        placeat distinctio adipisci provident molestias laudantium dolorem ea. Assumenda nulla eum perferendis eveniet
+        ipsa optio quis, nobis repudiandae quasi autem iure harum praesentium illo alias inventore doloremque,
+        voluptatem illum rem aspernatur explicabo? Placeat unde quidem assumenda ad incidunt molestias nostrum,
+        quisquam, distinctio commodi praesentium ut blanditiis molestiae dolorem repellendus sequi soluta officia
+        voluptas facilis? Itaque dolorum ipsam provident, amet vero natus exercitationem illum voluptate repudiandae
+        perferendis quibusdam dolore optio modi officiis qui delectus nisi possimus laudantium ullam nemo doloribus
+        tempora earum? Commodi amet odit cum facilis, voluptas quasi. Debitis tempore illum minima ratione repudiandae
+        molestias molestiae. Vitae natus, vel dolore ipsam voluptatibus enim voluptates ullam facilis laboriosam
+        reprehenderit maiores sed inventore dicta tempore illo doloribus architecto. Debitis ullam iusto consequuntur
+        quas, magnam nemo aliquam error fugit beatae quidem totam necessitatibus ratione. Deserunt consequatur ipsa
+        temporibus fugiat doloribus inventore tempore ipsum modi illum, voluptatem voluptate ut delectus, unde mollitia
+        adipisci fugit dicta sed libero quos? Totam minus incidunt debitis, quisquam cumque, soluta ratione qui impedit
+        blanditiis error voluptatibus officia recusandae iure nesciunt ad natus excepturi quo nobis quas atque autem.
+        Perspiciatis temporibus, sint commodi nemo libero, repudiandae suscipit provident odio corrupti reiciendis eos
+        architecto consectetur culpa consequuntur corporis necessitatibus. Esse dolore, commodi temporibus ea, ut
+        laboriosam assumenda provident eaque ullam quam reiciendis? Sequi quibusdam veniam sunt a molestias, deserunt
+        recusandae dolores eos consequatur minus assumenda accusantium dignissimos porro veritatis corrupti minima quae.
+        Adipisci saepe at unde molestias modi aperiam magnam, praesentium tenetur sit debitis voluptas! Ullam numquam
+        reprehenderit minus sed ipsum nesciunt commodi minima! Sint, sequi reiciendis! Accusamus corporis ea magni
+        deleniti. Corrupti velit ullam soluta numquam doloremque. Fugit hic at architecto? Ratione perspiciatis itaque
+        illum? Nihil, quam corrupti. Laboriosam similique atque, repellat quis inventore ad perferendis, nulla officia,
+        deserunt necessitatibus nemo sapiente quas. Dolores, quam magnam nam quae assumenda accusamus nobis aut
+        architecto sequi et voluptas aperiam nisi error ducimus corporis facilis eum iure maxime? Omnis reprehenderit a
+        architecto! Hic, repudiandae? Vitae magnam eius adipisci quasi, non suscipit. Sit necessitatibus est incidunt
+        totam magnam, voluptate quo impedit cum repellat corporis amet dignissimos perferendis nostrum nihil, ipsam
+        porro aut quia illo neque tenetur fugit. Nam, culpa, minima, laborum assumenda repellendus quibusdam iste ipsam
+        laudantium tempora explicabo at saepe architecto. Nihil dolore eveniet expedita incidunt porro facere assumenda
+        amet deleniti beatae eaque maxime tempora odio commodi nobis, libero omnis possimus, vero qui at optio harum
+        perspiciatis! Inventore aliquam omnis, molestiae blanditiis optio maxime facere laboriosam ducimus, ex, beatae
+        nam temporibus unde nemo? Totam error incidunt nisi quia mollitia repellat, velit quasi expedita voluptates
+        reiciendis itaque quae dignissimos excepturi libero molestias necessitatibus ipsam voluptate placeat!
+        Perspiciatis praesentium, tenetur ut animi magnam ad necessitatibus alias natus voluptatum! Ducimus ex libero
+        quidem. Mollitia fugiat voluptatem commodi necessitatibus asperiores cumque, magni porro vel recusandae
+        similique excepturi rem quae quasi sapiente consequatur modi dignissimos ex amet atque veritatis, molestiae
+        alias praesentium. Dolorem, amet voluptate! Quo sit fugit autem optio aut accusantium quia tenetur quisquam quas
+        odio, dolorem perspiciatis fuga, delectus voluptatem iste. Autem rerum soluta dolorem suscipit quas nulla
+        ducimus veritatis reiciendis labore magnam distinctio eveniet nobis minima magni vero, alias voluptatem laborum
+        sint expedita? Placeat deserunt optio esse quis eaque facere dolor reprehenderit similique, error facilis quae
+        harum, repudiandae perferendis minima voluptates neque, illo recusandae ut veritatis nesciunt. Perspiciatis
+        debitis dolorum atque modi et, placeat explicabo quia ipsam, neque quas voluptates nulla repellat quaerat
+        repellendus. Nulla in sed illo enim corrupti facilis vitae officia sapiente suscipit dolore eos rerum, dolorum
+        qui est omnis sint explicabo cumque commodi accusamus at impedit? Iure cumque dolor deserunt earum cum
+        temporibus, mollitia quos explicabo hic tempora praesentium. Quisquam amet iste corrupti neque, ullam similique
+        assumenda atque officiis placeat reiciendis quidem facere veritatis consequuntur modi in, veniam possimus ut
+        nisi quam quia enim alias hic dolores nihil? Id debitis, sapiente modi reiciendis animi ratione. Cupiditate
+        reprehenderit beatae dicta laudantium. Quaerat iure, veniam fugiat distinctio, a nostrum, cumque obcaecati
+        aliquam perspiciatis placeat animi atque! Odit suscipit amet asperiores id quaerat incidunt laborum voluptas
+        dolorum possimus, sapiente corporis sequi repellat, ullam inventore deleniti omnis perspiciatis, iusto quo autem
+        voluptates officia placeat? Provident repudiandae perspiciatis consequatur quisquam dolores nam.</p> -->
+
+
+
+    <section class="menuClass">
+        <section id="menuId" class="mb-3 d-none flex-row bg-success align-items-end justify-content-between ">
+            <img src="./aththesic.jpg" width="10%" class="ms-xl-4 ms-sm-0" alt="">
+            <ol class="list-unstyled d-flex flex-row mb-0 ms-auto">
+                <li class="ms-sm-2 ms-xl-4"><a href="./js.html" class="text-white">JS</a></li>
+                <li class="ms-sm-2 ms-xl-4"><a href="./task.html" class="text-white">TASK</a></li>
+                <li class="ms-sm-2 ms-xl-4"><a href="./view.html" class="text-white">VIEW</a></li>
+                <li class="ms-sm-2 ms-xl-4"><a href="./practise.html" class="text-white">PRACTISE</a></li>
+            </ol>
+        </section>
+    </section>
+
+
+    <section class="container-fluid">
+        <div class="row border border-5 border-warning">
+            <div class="col-6 border border-3 border-success  text-center text-success bg-info">
+                <div class="row border rounded-pill border-info">
+                    <div class="col-6 border border-3 border-danger text-center invisible-hover">content-1-1</div>
+                    <div class="col-6 border border-3 border-dark text-center">content-1-2</div>
+                </div>
+            </div>
+            <div class="col-6 border border-3 border-info rounded text-center">content-2</div>
+        </div>
+        <div class="row border border-5 border-success">
+            <div class="col-4 border border-3 border-warning text-center">content-1</div>
+            <div class="col-4 border border-3 border-dark text-center">content-2</div>
+            <div class="col-4 border border-3 border-warning text-center">content-3</div>
+        </div>
+        <div class="row border border-5 border-secondary">
+            <div class="col-3 border border-3 border-danger text-center">content-1</div>
+            <div class="col-3 border border-3 border-primary text-center">content-2</div>
+            <div class="col-3 border border-3 border-dark text-center">content-3</div>
+            <div class="col-3 border border-3 border-primary text-center">content-3</div>
+        </div>
+        <div class="row border border-5 border-dark">
+            <div class="col border border-3 text-center text-capitalize">content-1</div>
+            <div class="col border border-3 text-center text-uppercase">content-2</div>
+            <div class="col border border-3 text-center fw-lighter">content-3</div>
+            <div class="col border border-3 text-center fw-bolder">content-3</div>
+            <div class="col border border-3 text-center fw-bold">content-3</div>
+        </div>
+    </section>
+
+    </section>
+
+
+    <div class="dropdown my-4">
+        <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true">Menu 2</button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Alpha</a></li>
+            <li><a class="dropdown-item" href="#">Beta</a></li>
+            <li><a class="dropdown-item" href="#">Gamma</a></li>
+        </ul>
+    </div>
+
+    <button onclick="js()">color_change</button>
+    <button onclick="jsp()">color_change</button>
+    <p id="p" style="color: black;">para</p>
+
+    <script>
+        var menu = document.getElementById("menuId");
+        function menufunc() {
+            menu.classList.toggle("d-flex")
+            menu.classList.toggle("d-none")
+        }
+
+        function js() {
+            if (document.body.style.backgroundColor == "white") {
+                document.body.style.backgroundColor = "purple"
+            }
+            else {
+                document.body.style.background = "white"
+            }
+        }
+
+        var var4 = document.querySelector("p")
+        function jsp() {
+            var curr = var4.style.color
+            if (curr === "black") {
+                var4.style.color = "purple"
+            }
+            else if (curr === "purple") {
+                var4.style.color = "green"
+            }
+            else {
+                var4.style.color = "blue"
+            }
+        }
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <!-- <script src="../assets/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>
