@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <style>
         body {
-            padding-top: 100px;
-            /* adjust if navbar is taller */
+            margin: 0;
+            padding: 0;
         }
 
         .responsive-img {
@@ -21,24 +22,27 @@
                 width: 10%;
             }
         }
-        
+
         .carousel-inner img {
-            width: 100%;         
-            height: 100vh;        
+            width: 100%;
+            height: 100vh;
             object-fit: fill;
         }
 
-        .carousel-inner{
+        .carousel-inner {
             height: fit-content;
         }
-        
 
+        .dd:hover .dropdown-menu {
+            display: block;
+            /* margin-top: 70px; */
+        }
     </style>
 </head>
 
 <body>
 
-    <section class=" navbar navbar-expand-lg bg-success position-fixed top-0 w-100 ">
+    <nav class="navbar navbar-expand-lg bg-success sticky-top w-100">
         <div class="container">
             <img src="./aththesic.jpg" class="responsive-img w-sm-10 ms-xl-4 ms-sm-0" alt="">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
@@ -47,46 +51,49 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ol class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
-                     <li class="ms-sm-2 ms-xl-4"><a href="./sharath.html" class="text-white">TASK</a></li>
-                <li class="ms-sm-2 ms-xl-4"><a href="./index.html" class="text-white">VIEW</a></li>
+                    <li class="ms-sm-2 ms-xl-4"><a href="./sharath.html" class="text-white">TASK</a></li>
+                    <li class="ms-sm-2 ms-xl-4"><a href="./index.html" class="text-white">VIEW</a></li>
                     <li class="ms-sm-2 ms-xl-4"><button class="btn btn-dark border rounded-pill btn-outline-warning "
                             onclick="menufunc()">menu</button></li>
                 </ol>
             </div>
         </div>
-    </section>
+    </nav>
 
-  <div class="container-fluid p-0">
-      <div id="carouselExampleIndicators" class="carousel slide mb-3" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-          class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./aththesic.jpg" class="d-block w-100" style="max-height: 400px;" alt="First slide">
+    <div class="container-fluid p-0">
+        <div id="carouselExampleIndicators" class="carousel slide mb-3" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./aththesic.jpg" class="d-block w-100" style="max-height: 400px;" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="./back_part.jpg" class=" d-block w-100" style="max-height: 400px;" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="./programmer.jpg" class="responsive d-block w-100" style="max-height: 400px;"
+                        alt="Third slide">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="carousel-item">
-          <img src="./back_part.jpg" class=" d-block w-100" style="max-height: 400px;" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img src="./programmer.jpg" class="responsive d-block w-100" style="max-height: 400px;" alt="Third slide">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-      </div>
-  </div>
+    </div>
 
     <section class="menuClass">
         <section id="menuId" class="mb-3 d-none flex-row bg-success align-items-end justify-content-between ">
@@ -132,20 +139,46 @@
     </section>
 
 
-    <div class="dropdown my-4">
-        <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true">Menu 2</button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+    <div class="dd dropdown my-4">
+        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Menu 2
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
             <li><a class="dropdown-item" href="#">Alpha</a></li>
             <li><a class="dropdown-item" href="#">Beta</a></li>
             <li><a class="dropdown-item" href="#">Gamma</a></li>
         </ul>
     </div>
 
+    <br>
+
+    <p id="newPara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptates quo distinctio earum
+        cumque, illo, repellat, nemo laboriosam reiciendis dolor ducimus omnis nihil!</p>
+
     <button onclick="js()">color_change</button>
     <button onclick="jsp()">color_change</button>
-    <p id="p" style="color: black;">para</p>
+    <div class="subsec">
+        <p id="pa" style="color: black;">para</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur non reiciendis praesentium, omnis magni esse quo quas? Possimus iste tempore dolorum magnam nobis obcaecati doloribus accusamus hic in beatae!</p>
 
     <script>
+
+        var abc = document.getElementById("newPara")
+        abc.style.color = "green";
+        abc.style.fontSize = "20px";
+        abc.style.border = "2px solid black";
+
+        var abc1 = document.createElement("p")
+        abc1.innerText = "the paragraph is created with js code"
+        abc1.id = "para1"
+        abc1.setAttribute("title", "hover to see the hidden content");
+
+        document.body.appendChild(abc1)
+
         var menu = document.getElementById("menuId");
         function menufunc() {
             menu.classList.toggle("d-flex")
@@ -161,7 +194,7 @@
             }
         }
 
-        var var4 = document.querySelector("p")
+        var var4 = document.querySelector("div #pa")
         function jsp() {
             var curr = var4.style.color
             if (curr === "black") {
@@ -177,12 +210,12 @@
 
 
     </script>
-
+    <!-- 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
 
-    <!-- <script src="../assets/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="../assets/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
